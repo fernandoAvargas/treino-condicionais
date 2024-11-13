@@ -1,9 +1,12 @@
 body {
     font-family: Arial, sans-serif;
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;     
     background-color: #ddedf0;
     display: flex;
     align-items: center;
     flex-direction: column; 
+    background-size: 100% 1200px;
    
 }
 
