@@ -1,14 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #ddedf0;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding: 20px;
+    flex-direction: column; 
+   
 }
 
 h1 {
     color: #333;
+    font-family: Verdana, Tahoma;
+    text-transform: uppercase;
+}
+
+p {
+   color:rgb(12, 50, 112);
+   font-size: large;
+}
+
+#subtitulo{
+    display: none;
 }
 
 button {
@@ -30,8 +41,26 @@ button:hover {
     margin-top: 20px;
     padding: 15px;
     background-color: #e0e0e0;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 600px;
+    border-radius: 5px;   
+    max-width: 800px;
     white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 6px 6px 2px 1px rgb(141, 140, 140);
+    font-weight: bold;  
+    display: none;   
+    padding-right: 9rem;
+}
+
+.centralize{
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+
+.conteudo{
+
+    background-color: rgb(167, 212, 231); 
+    padding: 3rem; 
+
+
 }

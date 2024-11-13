@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classificação por Idade</title>
+    <link rel="stylesheet" href="/home/fernando/Projects/Pedro/treino-condicionais/style.css">
 </head>
 <body>
+    <container class="centralize conteudo">
     <h1>Classificação por Idade</h1>
     <p>Insira as idades para ver a classificação. Digite 0 para encerrar o programa.</p>
 
     <button onclick="classificarIdades()">Iniciar Classificação</button>
-
-    <h2>Resultado</h2>
-    <pre id="resultado"></pre>
+    
+   
+    <h2 id="subtitulo">Resultado</h2>
+    <span id="resultado"></span>
 
     <script>
         function classificarIdades() {
@@ -61,7 +64,7 @@
             // Exibe os resultados após a inserção de idades
             if (quantidade > 0) {
                 const mediaIdade = totalIdades / quantidade;
-                resultadoTexto += `
+                resultadoTexto +=  `
                 Programa encerrado.
                 Total de pessoas: ${quantidade}
                 Média das idades: ${mediaIdade.toFixed(2)}
@@ -69,13 +72,22 @@
                 Adolescentes: ${categorias.adolescente}
                 Adultos: ${categorias.adulto}
                 Idosos: ${categorias.idoso}
+                
                 `;
+               
             } else {
                 resultadoTexto += "Nenhuma idade válida foi inserida.";
             }
+          
 
             document.getElementById("resultado").textContent = resultadoTexto;
+
+            document.getElementById("subtitulo").style.display="block";
+
+            document.getElementById("resultado").style.display="block";            
+   
         }
     </script>
+    </container>
 </body>
 </html>
